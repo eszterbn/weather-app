@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <p class="date" id="current-time">Friday 28 January 16:56</p>
+      </div>
+      <div class="row">
+       <h1><span class="city-emoji">📍</span>Budapest</h1>
+       </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="col weather-condition">
+              <ul class="list">
+                <li id="weather-condition">Cloudy</li>
+                <li id="humidity">Humidity</li>
+                <li id="wind-speed">Wind speed</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <h2>
+              <span class="icon" id="icon">⛅️</span>
+            <span class="temperature" id="temperature">
+              6<span class="units">
+                <a href="" id="celsius">℃</a>
+              </span>
+            </span>
+            <div class="highlow">
+              L:<span id="low">2</span>° H:<span id="high">7</span>°
+            </div>
+            </h2>
+          </div>
+        </div>
+      
+      <div class="row">
+        <div class="col today">
+          <span class="emoji">☁️</span>
+          <br />
+          0℃ / 6℃
+          <br />
+          today
+        </div>
+        <div class="col tomorrow">
+          <span class="emoji">🌧</span>
+          <br />
+          3℃ / 8℃
+          <br />
+          tomorrow
+        </div>
+        <div class="col sunday">
+          <span class="emoji">⛅️</span>
+          <br />
+          -1℃ / 6℃
+          <br />
+          Sun
+        </div>
+        <div class="col monday">
+          <span class="emoji">☁️</span>
+          <br />
+          -2℃ / 6℃
+          <br />
+          Mon
+        </div>
+        <div class="col tuesday">
+          <span class="emoji">🌧</span>
+          <br />
+          -2℃ / 7℃
+          <br />
+          Tue
+        </div>
+        <div class="col wednesday">
+          <span class="emoji">☁️</span>
+          <br />
+          -2℃ / 6℃
+          <br />
+          Wed
+        </div>
+      </div>
+      <form class="type-city" id="type-city">
+        <div class="row">
+          <div class="col-8">
+            <input
+              class="city"
+              id="city"
+              type="search"
+              placeholder="Type a city.."
+              autofocus="on"
+              autocomplete="on"
+            />
+          </div>
+          <div class="col">
+            <button
+              type="submit"
+              value="Search"
+              class="btn btn-outline-secondary btn-sm"
+            >
+              🔎 Search
+            </button>
+          </div>
+        </div>
+      </form>
+      <button
+        type="submit"
+        value="search"
+        class="btn btn-outline-secondary btn-sm location-button"
+        id="location"
+      >
+        📍 My location
+      </button>
+    </div>
+</div>
+    <script src="weatherapp.js"></script>
+  </body>
+</html>

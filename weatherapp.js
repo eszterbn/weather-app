@@ -43,9 +43,9 @@ function displayWeather(response) {
   document.querySelector(
     "h1"
   ).innerHTML = `${response.data.name}, ${response.data.sys.country}`;
-  document.querySelector("#temperature").innerHTML = Math.round(
+  document.querySelector("#temperature").innerHTML = `${Math.round(
     response.data.main.temp
-  );
+  )}°`;
   document.querySelector("#weather-condition").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#high").innerHTML = Math.round(

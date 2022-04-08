@@ -1,3 +1,6 @@
+body {
+  background: linear-gradient(#ffffff, #f9f3e5);
+}
 .weather-app-wrapper {
   max-width: 600px;
   font-family: "Poppins", sans-serif;
@@ -7,8 +10,10 @@
 .weather-app {
   padding: 25px;
   margin-bottom: 10px;
-  background: #ebf0f5;
-  border: 1px #374e68 solid;
+  background: linear-gradient(#f9f3e5, #e2dcd5);
+  filter: contrast(120%);
+  border: 1px #5e616a solid;
+  box-shadow: 1px 1px 20px #5e616a;
   border-radius: 5px;
 }
 .date {
@@ -102,7 +107,7 @@ h2 {
 .monday:hover,
 .tuesday:hover,
 .wednesday:hover {
-  background: #99ccd3;
+  background: #e9ab8c;
   transition: 200ms all ease-in-out;
 }
 
@@ -142,9 +147,10 @@ h2 {
   display: block;
   color: #122337;
   border-radius: 10px;
+  box-shadow: 1px 1px 1px;
 }
 .btn:hover {
-  background: #99ccd3;
+  background: #e9ab8c;
   color: #122337;
 }
 .location-button {
@@ -155,6 +161,7 @@ h2 {
   padding: 0 auto;
   color: #122337;
   border-radius: 10px;
+  box-shadow: 1px 1px 1px;
 }
 footer {
   font-size: 12px;

@@ -1,12 +1,15 @@
-.container {
+.weather-app-wrapper {
   max-width: 600px;
+  font-family: "Poppins", sans-serif;
+  font-weight: thin 100;
+  margin: 100px auto;
+}
+.weather-app {
   padding: 25px;
-  margin: 50px auto;
+  margin-bottom: 10px;
   background: #ebf0f5;
   border: 1px #374e68 solid;
   border-radius: 5px;
-  font-family: "Poppins", sans-serif;
-  font-weight: thin 100;
 }
 .date {
   font-size: 10px;
